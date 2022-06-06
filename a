@@ -1,0 +1,27 @@
+def encrypt(a, b):
+    for x in a:
+        b.append(x**bn1)
+    print(b)
+        
+def encrypt2(a, b):
+    for x in a:
+        b.append(x % bn2)
+    print(b)
+
+string = input("enter string: ")
+string = string.upper()
+
+ascii_list = []
+ascii_list_cubed = []
+ascii_list_modulus = []
+
+bn1 = 3
+bn2 = 10
+
+for character in string:
+    ascii_list.append(ord(character) - 64)
+
+print(ascii_list)
+
+encrypt(ascii_list, ascii_list_cubed)
+encrypt2(ascii_list_cubed, ascii_list_modulus)
